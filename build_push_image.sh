@@ -1,11 +1,11 @@
 #!/bin/bash
 
-docker build -t helminafan/item-app:v1 .
+docker build -t item-app:v1 .
 
 docker images
 
-docker tag helminafan/item-app:v1 docker.pkg.github.com/helminafan/a433-microservices/item-app:v1
+docker tag item-app:v1 ghcr.io/helminafan/a433-microservices/item-app:v1
 
-docker login docker.pkg.github.com -u helminafan -p PAT
+echo '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' | docker login ghcr.io -u USERNAME --password-stdin
 
-docker push docker.pkg.github.com/helminafan/a433-microservices/item-app:v1
+docker push ghcr.io/helminafan/a433-microservices/item-app:v1
