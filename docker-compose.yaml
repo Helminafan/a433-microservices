@@ -1,9 +1,9 @@
 version: "v2.22.0-desktop.2"
 services:
   item-app:
-    image: item-app:v1
+    image: ghcr.io/helminafan/a433-microservices/item-app:v1
     ports:
-      - "8080:8080"
+      - "80:8080"
     depends_on:
       - item-db
 
