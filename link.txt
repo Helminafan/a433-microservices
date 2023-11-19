@@ -1,0 +1,1 @@
+ghcr.io/helminafan/a433-microservices/item-app:v1
