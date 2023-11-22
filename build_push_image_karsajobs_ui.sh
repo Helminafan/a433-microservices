@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Nama Docker image untuk frontend
-DOCKER_IMAGE_NAME=helminafan23/karsajobs-ui:latest
+DOCKER_IMAGE_NAME=helminafan23/karsajobs-ui:v1.0.0
 
 # Menggunakan environment variable untuk password Docker Hub
 echo $PASSWORD_DOCKER_HUB | docker login -u helminafan23 --password-stdin
